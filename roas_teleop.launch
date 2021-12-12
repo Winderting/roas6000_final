@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+   <!--START KEY TELEOP  -->
+   <node pkg="roas6000_final" type="teleop_twist_keyboard.py" name="teleop" output="screen">
+	<remap from="/cmd_vel" to="/vrep/cmd_vel"/>
+   </node>
+   <!--START TRACKING -->
+   <!--node pkg="roas6000_final" type="track" name="track" /--> 
+   <include file="$(find roas6000_final)/roas_slam.launch" />
+</launch>
