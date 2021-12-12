@@ -1,4 +1,7 @@
 # roas6000_final  
+require installed ros melodic and vrep(coppeliaSim), and sim_ros_interface (https://github.com/CoppeliaRobotics/simExtROS) for communication between them.  
+require some packages including hector-slam, cv2, dlib, face-recognition and so on 
+
 cd to catkin_workspace/src, git clone this repo, donot rename it (or if you rename it, the following command should be modified correspondingly)  
 cd to catkin_workspace, catkin_make  
 
