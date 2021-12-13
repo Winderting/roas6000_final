@@ -11,11 +11,11 @@ $ chmod +x catkin_workspace/src/roas6000_final/scripts/dlib_detect.py
   
 ## For VREP Simulation:  
 terminal 1 - start the ros master  
-  
 $ roscore  
+  
 terminal 2 - open the vrep, load the env.ttt, start the simulation  
   
-terminal 3 - start slam, face detector, rviz showing the map gotten from slam and the marker representing the location of the face image if face detected, teleop_control to control the robot, area_check to check which area of room the robot is in.  
+terminal 3 - start roas_main.launch to run slam, face detector, rviz showing the map gotten from slam and the marker representing the location of the face image if face detected, teleop_control to control the robot, area_check to check which area of room the robot is in.  
 $ roslaunch roas6000_final roas_main.launch   
   
 terminal 4 - start the visual servoing when reach the D area  
