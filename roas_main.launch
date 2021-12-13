@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+   <!--START KEY TELEOP  -->
+   <node pkg="roas6000_final" type="teleop_twist_keyboard.py" name="teleop" output="screen">
+	<remap from="/cmd_vel" to="/vrep/cmd_vel"/>
+   </node>
+   <!--START SLAM AND RVIZ-->
+   <include file="$(find roas6000_final)/roas_slam.launch" />
+   <!--START DETECTOR AND MARKER-->
+   <node pkg="roas6000_final" type="dlib_detection.py" name="camera_opencv" output="screen"/>
+   <!--START AREA JUDGE  -->
+   <node pkg="roas6000_final" type="area_check.py" name="area_check" output="screen" launch-prefix="gnome-terminal --title=Area -e"/>
+</launch>
