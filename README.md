@@ -18,7 +18,7 @@ terminal 2 - open the vrep, load the env.ttt, start the simulation
 terminal 3 - start slam, face detector, rviz showing the map gotten from slam and the marker representing the location of the face image if face detected, teleop_control to control the robot, area_check to check which area of room the robot is in.  
 $ roslaunch roas6000_final roas_main.launch   
   
-terminal 4 - start the visual servoing when reach the D area 
+terminal 4 - start the visual servoing when reach the D area  
 $ rosrun roas6000_final visual_servoing.py  
   
 ## For rosbag recorded file, 
