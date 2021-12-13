@@ -45,4 +45,8 @@ catkin_install_python(PROGRAMS
    scripts/area_check.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
-	
+
+catkin_install_python(PROGRAMS
+   scripts/visual_servoing.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
